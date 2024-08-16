@@ -14,7 +14,7 @@ export default function Home() {
     no_bedroom: "",
   });
 
-  const filter_location = (e) => {
+  const filter_now = (e) => {
     e.preventDefault();
     let field = e.target;
     filter.current = {
@@ -90,7 +90,7 @@ export default function Home() {
             name="location"
             className="border-0  border-bottom border-secondary bg-white px-2"
             id=""
-            onChange={filter_location}
+            onChange={filter_now}
           >
             <option value="">Select location</option>
             <option value="Delhi">Delhi</option>
@@ -108,7 +108,7 @@ export default function Home() {
             className="border-0 border-bottom border-secondary px-2"
             placeholder="No. of badrooms"
             name="no_bedroom"
-            onChange={filter_location}
+            onChange={filter_now}
           />
           <div className="d-flex flex-wrap flex-sm-nowrap">
             <p className="mb-0 me-2 col-12 col-sm-auto">Select Price Range</p>
@@ -129,7 +129,7 @@ export default function Home() {
             </div>
             <button
               name="Price"
-              onClick={filter_location}
+              onClick={filter_now}
               className="px-2 mx-2 bg-primary border-0 text-white rounded fw-semibold"
             >
               Go
